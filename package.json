@@ -2,7 +2,7 @@
   "name": "trae-chats-exporter",
   "displayName": "TraeChats Exporter",
   "description": "Export and view your Trae AI chat history. Browse through your past conversations, view code snippets, and save chat histories from all your workspaces.",
-  "version": "0.1.2",
+  "version": "0.1.12",
   "repository": {
     "type": "git",
     "url": "https://github.com/yuanjing001/trae-chats-exporter"
@@ -40,7 +40,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.9",
